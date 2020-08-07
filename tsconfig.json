@@ -3,7 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ES2020",
+    "module": "commonjs",
     "outDir": "dist",
     "noEmit": false,
     "noUnusedLocals": true,
@@ -11,9 +11,9 @@
     "sourceMap": true,
     "strict": true,
     "isolatedModules": true,
-    "target": "es2020",
+    "target": "es5",
     "rootDir": "src"
   },
   "exclude": ["node_modules"],
-  "include": ["src", "index.ts", "index.d.ts"]
+  "include": ["src", "index.ts"]
 }
