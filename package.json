@@ -1,5 +1,5 @@
 {
-  "name": "currencyformatter-ts",
+  "name": "currency-formatter-typescript",
   "version": "2.2.0",
   "description": "A super simple currency formatting library by OSREC Technologies https://osrec.co.uk",
   "directories": {
