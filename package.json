@@ -1,5 +1,5 @@
 {
-  "name": "currency-formatter-typescript",
+  "name": "currencyformatter.ts",
   "version": "2.2.1",
   "description": "A super simple currency formatting library by OSREC Technologies https://osrec.co.uk",
   "directories": {
@@ -25,9 +25,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc && npm run uglify",
-    "uglify": "uglifyjs dist/currencyFormatter.js --compress --mangle --output dist/currencyFormatter.min.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm build"
+    "postinstall": "npm build"
   },
   "devDependencies": {
     "typescript": "^4.0.1-rc",
