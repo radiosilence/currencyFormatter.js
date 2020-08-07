@@ -24,11 +24,12 @@
   "homepage": "https://github.com/osrec/currencyFormatter.js#readme",
   "main": "./artifacts/index.js",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "postinstall": "yarn build"
+    "build": "tsc && npm run uglify",
+    "uglify": "uglifyjs dist/currencyFormatter.js --compress --mangle --output dist/currencyFormatter.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "typescript": "^4.0.1-rc"
+    "typescript": "^4.0.1-rc",
+    "uglify-js": "^3.10.1"
   }
 }
