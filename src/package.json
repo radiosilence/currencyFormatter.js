@@ -1,0 +1,19 @@
+{
+  "name": "mw-service-clients",
+  "version": "1.0.0",
+  "description": "TypeScript clients for MW services",
+  "main": "./artifacts/index.js",
+  "author": "James Cleveland <james.cleveland@magic.works>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "postinstall": "yarn build"
+  },
+  "dependencies": {
+    "@types/qs": "^6.9.3",
+    "mw-roxi-companion-protocol": "ssh://git@bitbucket.org:magicworks/mw-roxi-companion-protocol.git#f34d4f2",
+    "qs": "^6.9.4",
+    "typescript": "^3.9.5"
+  }
+}

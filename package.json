@@ -1,15 +1,9 @@
 {
-  "name": "currencyformatter.js",
+  "name": "currencyformatter.ts",
   "version": "2.2.0",
   "description": "A super simple currency formatting library by OSREC Technologies https://osrec.co.uk",
-  "main": "dist/currencyFormatter.js",
   "directories": {
     "doc": "docs"
-  },
-  "scripts": {
-    "build": "babel currencyFormatter.js -d dist && npm run uglify",
-    "uglify": "uglifyjs dist/currencyFormatter.js --compress --mangle --output dist/currencyFormatter.min.js && cp dist/currencyFormatter.min.js docs/currencyFormatter.min.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -28,22 +22,13 @@
     "url": "https://github.com/osrec/currencyFormatter.js/issues"
   },
   "homepage": "https://github.com/osrec/currencyFormatter.js#readme",
+  "main": "./artifacts/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "postinstall": "yarn build"
+  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "uglify-js": "^3.3.7"
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "uglify": true
-          }
-        }
-      ]
-    ]
-  },
-  "dependencies": {}
+    "typescript": "^4.0.1-rc"
+  }
 }
