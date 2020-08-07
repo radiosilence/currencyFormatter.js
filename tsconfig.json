@@ -4,7 +4,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
-    "outDir": "artifacts",
+    "outDir": "dist",
     "noEmit": false,
     "noUnusedLocals": true,
     "skipLibCheck": true,
